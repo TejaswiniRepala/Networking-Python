@@ -14,7 +14,7 @@ State = "\w+\/?\w+"
 UpTime = "\w+"
 Interface="\w.*"
 
-'''' parsing the output values by using the above regex of varaibles''' 
+'''' parsing the output values by using the above regex of varaibles into the below regex''' 
 
 ospf_nei_output=re.match((ip_match,Pri,State,UpTime,Interface),output) 
 print ospf_nei_output.group()
